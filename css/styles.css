@@ -467,6 +467,29 @@ body {
 .barbers-item {
   width: calc((100% - 60px) / 3);
 }
+
+.barbers-item:hover .barbers-top-text {
+  transform: translateY(0%);
+}
+
+.barbers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.barbers-top-text {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.5;
+  padding: 40px;
+  background-color: rgba(255, 106, 0, 0.544);
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
+}
 .barbers-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -648,4 +671,41 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 48, 48, 0.452);
+}
+
+.modal {
+  width: 500px;
+  min-height: 500px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
