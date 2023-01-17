@@ -18,6 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -53,29 +58,33 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a
-                href=""
-                class="hero-link link"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                href=""
-                class="hero-link link"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  href=""
+                  class="hero-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  href=""
+                  class="hero-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="content-wrap">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title animate__animated animate__wobble">
+              BarberShop
+            </h1>
             <p class="hero-after-title">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
@@ -105,7 +114,9 @@
           </ul>
           <div class="about-wrap">
             <p class="about-pre-title pre-title">About</p>
-            <h2 class="about-title title">Best Barbershop in your city</h2>
+            <h2 class="about-title title" data-aos="zoom-in-up">
+              Best Barbershop in your city
+            </h2>
             <p class="about-after-title">
               If you want to add more confidence to your image, you should
               definitely visit us.
@@ -127,7 +138,9 @@
           <p class="prices-pre-title pre-title">
             Spend your time with the best masters
           </p>
-          <h2 class="prices-title title">Services and prices</h2>
+          <h2 class="prices-title title" data-aos="flip-left">
+            Services and prices
+          </h2>
           <div class="prices-wrap">
             <ul class="prices-list list">
               <li class="prices-item">
@@ -193,7 +206,9 @@
           </ul>
           <div class="benefits-wrap">
             <p class="benefits-pre-title pre-title">Old traditional school</p>
-            <h2 class="benefits-title title">¿Why people come to us?</h2>
+            <h2 class="benefits-title title" data-aos="fade-right">
+              ¿Why people come to us?
+            </h2>
             <p class="benefits-after-title">
               Only good things are said about us. But it's better to see and
               feel 1 time than read 10 times.
@@ -423,5 +438,9 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
