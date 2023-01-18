@@ -388,6 +388,28 @@
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Online-booking</h2>
+            <form class="online-form">
+              <input
+                type="text"
+                class="online-input online-item"
+                name="online-name"
+                placeholder="Name*"
+              />
+              <input
+                type="tel"
+                class="online-input online-item"
+                name="online-tel"
+                placeholder="Phone*"
+              />
+              <textarea
+                class="online-mess online-item"
+                name="online-text "
+                placeholder="Message"
+              ></textarea>
+              <button type="button" class="online-btn btn" data-modal-open>
+                Send
+              </button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
@@ -435,6 +457,78 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
+        <p class="modal-title">Заголовок модального вікна</p>
+        <form class="modal-form">
+          <label>
+            <span class="input-text">введіть імя</span>
+            <span class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                placeholder="John"
+                required
+                minlength="2"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </span>
+          </label>
+          <div class="modal-field">
+            <label for="user-email" class="input-text">введіть пошту</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                placeholder="введіть пошту"
+                id="user-email"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </div>
+            <p class="error">Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="modal-field">
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              placeholder="+380(96)555-55-55"
+              title="+380(96)555-55-55"
+              required
+              value="+380"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-coment" class="input-text">введіть коментар</label>
+            <textarea
+              name="user-text"
+              id="user-coment"
+              class="input-message"
+              placeholder="comment"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value="true"
+              class="modal-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span
+                ><svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-che3"></use></svg
+              ></span>
+              Політика користування</label
+            >
+          </div>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
