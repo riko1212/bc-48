@@ -1,0 +1,45 @@
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__logo {
+  margin-right: 131px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link,
+.header__tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header__btn {
+  color: var(--main-btn-color);
+  margin-left: 40px;
+}
