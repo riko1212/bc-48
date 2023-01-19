@@ -2,42 +2,41 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.about-list {
+.pic-list {
   display: flex;
   gap: 30px;
 }
 
-.about-container {
+.about__container {
   display: flex;
   gap: 30px;
 }
 
-.about-wrap {
+.about__wrap {
   max-width: 470px;
 }
 
-.about-pre-title {
-  color: #303030;
+.about__pre-title {
   margin-bottom: 20px;
 }
-.about-title {
+.about__title {
   color: var(--second-title-color);
   margin-bottom: 20px;
 }
-.about-after-title {
+.about__after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 20px;
 }
-.about-text {
+.about__text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 42px;
 }
-.about-btn {
+.about__btn {
   color: var(--second-btn-color);
 }
