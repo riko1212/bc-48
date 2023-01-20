@@ -29,6 +29,9 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 address {
@@ -62,10 +65,24 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .pre-title {
@@ -650,9 +667,21 @@ body {
 }
 
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .barbers__pre-title {
@@ -666,11 +695,22 @@ body {
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .card__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .card__top-wrap {
@@ -752,25 +792,50 @@ body {
   fill: #ff6c00;
 } */
 .gallery {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .gallery-pre-title {
   color: #303030;
-  margin-bottom: 44px;
+  margin-bottom: 71px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-pre-title {
+    margin-bottom: 44px;
+  }
 }
 
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 60px;
+  gap: 30px;
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .contact-wrap {

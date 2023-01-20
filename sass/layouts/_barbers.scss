@@ -1,7 +1,16 @@
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .barbers__pre-title {
   margin-bottom: 20px;
@@ -14,11 +23,18 @@
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .card__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .card__top-wrap {
