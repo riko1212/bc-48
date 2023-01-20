@@ -1,10 +1,7 @@
 .pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
+  @include font(600, 11px, 1.36, null);
+  @extend %align-list;
   gap: 20px;
   &::before {
     content: '';

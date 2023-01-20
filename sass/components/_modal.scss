@@ -120,8 +120,7 @@
 .check-text {
   font-size: 14px;
   color: #555555;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   position: relative;
   span {
     width: 16px;
@@ -129,8 +128,7 @@
     border: 2px solid #303030;
     border-radius: 2px;
     margin-right: 5px;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     fill: transparent;
     .modal-check:checked + & {

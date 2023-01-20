@@ -6,8 +6,7 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
 }
 
 .navigation__logo {
@@ -15,8 +14,7 @@
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   margin-right: auto;
 }
 

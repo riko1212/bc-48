@@ -11,8 +11,7 @@
 }
 
 .soc__list {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
   gap: 40px;
@@ -52,9 +51,10 @@
 
 .hero__title {
   font-family: 'Raleway', sans-serif;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
+  @include font(null, 72px, 1.18, 0.05em);
+  // font-size: 72px;
+  // line-height: 1.18;
+  // letter-spacing: 0.05em;
   color: var(--main-title-color);
   margin-bottom: 20px;
   /* display: flex;

@@ -76,8 +76,7 @@
   height: 100%;
   border-radius: 50%;
   background-color: tomato;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   color: #ffffff;
   &:hover {
